@@ -18,7 +18,6 @@ package org.gearvrf.immersivepedia;
 import org.gearvrf.GVRContext;
 import org.gearvrf.GVRCursorController;
 import org.gearvrf.GVREventListeners;
-import org.gearvrf.GVRPicker;
 import org.gearvrf.GVRScene;
 import org.gearvrf.GVRMain;
 import org.gearvrf.IActivityEvents;

@@ -16,23 +16,13 @@
 
 package org.gearvrf.io.cursor;
 
-import android.util.SparseArray;
-import android.view.KeyEvent;
-
-
 import org.gearvrf.GVRPicker;
-
 import org.gearvrf.GVRSceneObject;
-
 import org.gearvrf.io.cursor3d.Cursor;
 import org.gearvrf.io.cursor3d.CursorManager;
-import org.gearvrf.io.cursor3d.CursorType;
 import org.gearvrf.io.cursor3d.ICursorEvents;
 import org.gearvrf.io.cursor3d.SelectableBehavior;
-import org.gearvrf.utility.Log;
 import org.joml.Vector3f;
-
-import java.util.concurrent.Future;
 
 class SpaceObject implements ICursorEvents {
     private static final String TAG = SpaceObject.class.getSimpleName();

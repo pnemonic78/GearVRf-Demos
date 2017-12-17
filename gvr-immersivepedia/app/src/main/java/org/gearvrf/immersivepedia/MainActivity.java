@@ -18,11 +18,9 @@ package org.gearvrf.immersivepedia;
 import org.gearvrf.GVRActivity;
 import org.gearvrf.immersivepedia.input.TouchPadInput;
 import org.gearvrf.immersivepedia.util.VRTouchPadGestureDetector;
-import org.gearvrf.immersivepedia.util.VRTouchPadGestureDetector.OnTouchPadGestureListener;
 import org.gearvrf.immersivepedia.util.VRTouchPadGestureDetector.SwipeDirection;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MotionEvent;
 
 public class MainActivity extends GVRActivity implements
