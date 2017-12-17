@@ -30,7 +30,6 @@ import org.gearvrf.immersivepedia.props.TotemEventListener;
 import org.gearvrf.immersivepedia.util.AudioClip;
 import org.gearvrf.immersivepedia.util.RenderingOrderApplication;
 import org.gearvrf.immersivepedia.util.VRTouchPadGestureDetector.SwipeDirection;
-import org.gearvrf.utility.Log;
 
 import java.util.ArrayList;
 

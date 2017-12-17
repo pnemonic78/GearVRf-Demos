@@ -32,7 +32,6 @@ import org.gearvrf.immersivepedia.focus.FocusListener;
 import org.gearvrf.immersivepedia.focus.FocusableSceneObject;
 import org.gearvrf.immersivepedia.shader.MenuImageShader;
 import org.gearvrf.immersivepedia.util.AudioClip;
-import org.gearvrf.immersivepedia.util.MathUtils;
 import org.gearvrf.immersivepedia.util.RenderingOrderApplication;
 import org.gearvrf.scene_objects.GVRTextViewSceneObject;
 import org.gearvrf.utility.Log;

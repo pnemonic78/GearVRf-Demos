@@ -19,7 +19,6 @@ import java.io.IOException;
 import java.util.EnumSet;
 
 import org.gearvrf.GVRAndroidResource;
-import org.gearvrf.GVRAndroidResource.TextureCallback;
 import org.gearvrf.GVRContext;
 import org.gearvrf.GVRImportSettings;
 import org.gearvrf.GVRMesh;

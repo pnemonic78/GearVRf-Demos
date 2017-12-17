@@ -1,11 +1,8 @@
 package org.gearvrf.immersivepedia.focus;
 
-import android.view.MotionEvent;
-
 import org.gearvrf.GVREventListeners;
 import org.gearvrf.GVRPicker;
 import org.gearvrf.GVRSceneObject;
-import org.gearvrf.IPickEvents;
 import org.gearvrf.immersivepedia.GazeController;
 import org.gearvrf.utility.Log;
 

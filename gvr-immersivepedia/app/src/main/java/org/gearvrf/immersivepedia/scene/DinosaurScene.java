@@ -18,7 +18,6 @@ package org.gearvrf.immersivepedia.scene;
 import java.io.IOException;
 
 import org.gearvrf.GVRAndroidResource;
-import org.gearvrf.GVRAndroidResource.TextureCallback;
 import org.gearvrf.GVRAssetLoader;
 import org.gearvrf.GVRComponent;
 import org.gearvrf.GVRContext;
