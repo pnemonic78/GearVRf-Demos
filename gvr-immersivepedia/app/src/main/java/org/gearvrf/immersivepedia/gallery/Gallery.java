@@ -16,6 +16,7 @@
 package org.gearvrf.immersivepedia.gallery;
 
 import org.gearvrf.GVRAndroidResource;
+import org.gearvrf.GVRCollider;
 import org.gearvrf.GVRContext;
 import org.gearvrf.GVRMeshCollider;
 import org.gearvrf.GVRRenderPass.GVRCullFaceEnum;
@@ -91,7 +92,7 @@ public class Gallery extends FocusableSceneObject implements PhotoEventListener,
     private ArrayList<PhotoGridItem> gridItems = new ArrayList<PhotoGridItem>();
 
     private GVRContext gvrContext;
-
+    private GVRCollider galleryCollider;
     private int[] photoIds;
 
     private GalleryArrow leftArrow;
@@ -162,6 +163,7 @@ public class Gallery extends FocusableSceneObject implements PhotoEventListener,
     }
 
     public void openAction() {
+        galleryCollider.setEnable(false);
         currentState = GALLERY_OPENED;
         this.getTransform().setScale(1f, 1f, 1f);
         for (PhotoView view : this.photos) {
@@ -171,7 +173,7 @@ public class Gallery extends FocusableSceneObject implements PhotoEventListener,
 
     public void closeAction() {
         this.getTransform().setScale(0f, 0f, 0f);
-
+        galleryCollider.setEnable(true);
         currentState = GALLERY_CLOSED;
         this.getRenderData().setCullFace(GVRCullFaceEnum.None);
         this.showInteractiveCursor = false;
@@ -187,7 +189,8 @@ public class Gallery extends FocusableSceneObject implements PhotoEventListener,
         this.gvrContext = gvrContext;
         this.getRenderData().setRenderingOrder(RenderingOrderApplication.GALLERY);
         this.setName("gallery");
-        this.attachCollider(new GVRMeshCollider(getGVRContext(), false));
+        galleryCollider = new GVRMeshCollider(getGVRContext(), true);
+        this.attachCollider(galleryCollider);
 
         this.focusListener = new FocusListener() {
 
